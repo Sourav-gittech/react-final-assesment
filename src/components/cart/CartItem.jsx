@@ -207,7 +207,7 @@ const CartItem = (props) => {
                             <Card.Img variant="top" src={productDetails.img} className='cart-product-img' />
                             <Card.Body>
                                 <Card.Title className="fw-bold text-center card-title">
-                                    <Link to={`/category/${productDetails.category_id}/product/${productDetails.id}/product_details`}>{productDetails.name}</Link>
+                                    {productDetails.name}
                                 </Card.Title>
                                 <Card.Text className='m-0'>
                                     <span className="fw-bold">Brand: </span>{productDetails.brand}
